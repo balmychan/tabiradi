@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+	<title>旅ラジ</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<link rel="shortcut icon" href="./favicon.png">
+<!-- lib -->
+	<script type="text/javascript" src="./lib/jquery/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.ui/jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.dump/jquery.dump.js"></script>
+	<script type="text/javascript" src="./lib/jquery.log/jquery.log.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.hashchange/jquery.ba-hashchange.min.js"></script>
+	<script type="text/javascript" src="./lib/socket.io/socket.io.min.js"></script>
+	<link rel="stylesheet" href="./css/default.css" type="text/css" />
+	<link rel="stylesheet" href="./lib/jquery.ui/css/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" />
+<!-- llib -->
+	<script type="text/javascript" src="./llib/WebRadiconClient.js"></script>
+	<script type="text/javascript" src="./llib/WebRadicon.js"></script>
+<!-- local -->
+	<script type="text/javascript" src="./js/main.js"></script>
+	<link rel="stylesheet" href="./css/main.css" type="text/css" />
+</head>
+<body>
+	<div id="main">
+		<div id="camera_area">
+			<div id="image_box">
+				<div id="image_box_inner">
+					<img id="view_image" width="576" height="432" />		
+					<img src="./image/camera_close.jpg" id="cover_image" width="576" height="432" />		
+				</div>
+				<div id="help_area">
+					<div id="youtube_button_area">
+						<img id="youtube_button" src="./image/youtube-btn-off.jpg" />
+					</div>
+					<div id="help_button_area">
+						<img id="help_button" src="./image/help-btn-off.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tsubuyaki_area">
+			<div id="tsubuyaki_ticker">
+				<div id="tsubuyaki_ticker_inner">
+				</div>
+			</div>
+			<div id="tsubuyaki_input_area">
+				<input type="text" id="tsubuyaki_input" placeholder="つぶやき" />
+				<img id="send_button" src="./image/tbyk-off.jpg" />
+			</div>
+			<div id="rest_box">
+				<span id="rest_time"></span>
+			</div>
+			<div id="radicon_area">
+				<img src="./image/car.png" />
+			</div>
+		</div>
+		<div id="button_area">
+			<img id="button_image" style="display:none;" src="./image/btn.png" usemap="#button_map" />
+			<img id="button_cover_image" style="display:none;" usemap="#button_map"/>
+			<map id="button_map" name="button_map">
+				<area href="javascript:$(window).trigger('forward');" shape="poly" coords="30,30, 50,50, 67,44, 85,50, 105,30, 67,14" />
+				<area href="javascript:$(window).trigger('right');" shape="poly" coords="106,30, 85,52, 92,67, 84,84, 107,104, 121, 68" />
+				<area href="javascript:$(window).trigger('back');" shape="poly" coords="85,85, 105,106, 67,122, 30,106, 51,85, 68,92" />
+				<area href="javascript:$(window).trigger('left');" shape="poly" coords="50,84, 28,105, 13,69, 29,30, 50,51, 43,68" />
+				<area href="javascript:$(window).trigger('stop');" shape="circle" coords="67,67,20" />
+			</map>
+		</div>
+			
+		<div id="entry_area">
+			<span id="queue_time_area" class="small">
+				まずはプレイヤー登録⇒
+				<!--現在予想待ち時間<span id="queue_time" class="strong">:あとxx分</span>-->
+			</span>
+			<input type="text" id="entry_input" placeholder="名前入力" />
+			<button type="button" class="queue-button" id="queue_button"></button>
+		</div>
+		<div id="queue_area">
+			<ul id="queue_list">
+				<li class="player"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
