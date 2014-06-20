@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body {
+	background-image : url("../image/bg.jpg");
+	font-size : 16px;
+	letter-spacing : 0.5px;
+	font-family:"メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3",Osaka,"ＭＳ Ｐゴシック" !important;
+}
+
+#main_area {
+	margin-top	: 30px;
+	margin-left : auto;
+	margin-right: auto;
+	width : 962px;
+}
