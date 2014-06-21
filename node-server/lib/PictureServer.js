@@ -22,7 +22,7 @@ exports.createServer = function() {
 var PictureServer = function () {
 	this.options = {
 		port 			: 8800,
-		pictureFilePath	: "/var/www/html/picture.jpg"
+		pictureFilePath	: "/var/lib/tabiradi/site/image/picture.jpg"
 	};
 	this.clientList = [];
 };
