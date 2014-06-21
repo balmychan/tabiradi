@@ -1,3 +1,12 @@
+旅ラジ
+-----
+
+![代替テキスト](https://raw.githubusercontent.com/balmychan/tabiradi/master/site/image/helppage.png)
+
+[旅ラジ操作動画はこちら](http://www.youtube.com/watch?v=8J5xxVJF39Q "旅ラジ操作動画")
+
+
+
 旅ラジサーバーセットアップ
 -----
 
