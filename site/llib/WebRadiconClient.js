@@ -11,7 +11,7 @@ var WebRadiconClient = function() {
 
 WebRadiconClient.options = {
 	// 接続するサーバーURL
-	SERVER_URL : "http://tabiradi.jp:8080"
+	SERVER_URL : "http://" + WebRadiconValue.server + ":8080"
 };
 
 // Webラジコンサーバーに接続する

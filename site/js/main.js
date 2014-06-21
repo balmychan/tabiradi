@@ -17,7 +17,7 @@ $(function() {
 	
 	// 最初はボタンは触れないように（別に触れても問題ないけど）
 	disableControl();
-	pictureSocket = io.connect( "http://tabiradi.jp:8800" );
+	pictureSocket = io.connect( "http://" + WebRadiconValue.server + ":8800" );
 	if ( pictureSocket ) {
 		pictureSocket.on("message", function(data) {
 			if ( data.message == "updated" )
@@ -244,7 +244,7 @@ $(function() {
 	function reloadViewImage() {
 		if ( reloading ) return;
 		reloading = true;
-		$("#view_image").attr("src", "http://balmysoft.com/picture.jpg?_timestamp=" + new Date().getTime());
+		$("#view_image").attr("src", "http://" + WebRadiconValue.server + "/image/picture.jpg?_timestamp=" + new Date().getTime());
 	}
 	
 	// Webラジコンの画像をクリアする
