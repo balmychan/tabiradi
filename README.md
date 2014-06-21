@@ -1,4 +1,4 @@
-旅ラジ
+旅ラジについて
 -----
 
 ![代替テキスト](https://raw.githubusercontent.com/balmychan/tabiradi/master/site/image/helppage.png)
@@ -7,7 +7,7 @@
 
 
 
-旅ラジサーバーセットアップ
+旅ラジ　サーバーセットアップ
 -----
 
 ### node.js、foreverをインストール
