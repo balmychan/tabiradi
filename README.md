@@ -17,6 +17,7 @@ $ rpm -ivh http://ftp.riken.jp/Linux/fedora/epel/6/x86_64/epel-release-6-8.noarc
 $ yum install nodejs npm --enablerepo=epel
 
 $ npm install forever -g
+$ npm install coffee-script -g
 ```
 
 ### gitをインストール
@@ -56,8 +57,8 @@ $ /etc/init.d/httpd restart
 ``` bash
 $ cd /var/lib/tabiradi/node-server
 $ npm install
-$ forever start Server.js
-$ forever start picture.js
+$ forever start -c coffee Server.coffee
+$ forever start -c coffee picture.coffee
 $ forever list
 ```
 
