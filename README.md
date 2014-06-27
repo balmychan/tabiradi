@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 旅ラジサーバーセットアップ
 =======
 旅ラジについて
@@ -7,12 +6,6 @@
 ![代替テキスト](https://raw.githubusercontent.com/balmychan/tabiradi/master/site/image/helppage.png)
 
 [旅ラジ操作動画はこちら](http://www.youtube.com/watch?v=8J5xxVJF39Q "旅ラジ操作動画")
-
-
-
-旅ラジ　サーバーセットアップ
->>>>>>> b817788061b80f064093b3bfd1d28b1d21b5d3f2
------
 
 ### node.js、foreverをインストール
 
@@ -66,8 +59,6 @@ $ forever list
 
 ※サーバーアドレスは、node-server/Server.jsで書き換える
 
-<<<<<<< HEAD
-=======
 ### ポートを開ける
 
 下記ポートをそれぞれ開ける
@@ -79,7 +70,6 @@ $ forever list
 8800|Webサイトからラジコン画像を受け取るためのnodeサーバーとのWebSocket接続
 3000|Arduinoからnodeサーバーに接続するためのソケット
 
->>>>>>> b817788061b80f064093b3bfd1d28b1d21b5d3f2
 ### サイトにアクセス
 
 ブラウザでサイトにアクセスし、エラーが発生していないことを確認する
