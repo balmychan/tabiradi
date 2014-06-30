@@ -52,6 +52,7 @@ $ /etc/init.d/httpd restart
 
 ``` bash
 $ cd /var/lib/tabiradi/node-server
+$ npm install
 $ forever start Server.js
 $ forever start picture.js
 $ forever list
