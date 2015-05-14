@@ -63,12 +63,12 @@ p.listen = (options) ->
   adServer = net.createServer((stream) ->
     self._arduinoConnected stream
     return
-  ).listen(self.options.arduinoPort, self.options.ip)
+  ).listen(self.options.arduinoPort)
   adServer.on "error", (e) ->
     console.log e.message
     setTimeout ->
       adServer.close()
-      adServer.listen self.options.arduinoPort, self.options.ip
+      adServer.listen self.options.arduinoPort
       return
 
     return
